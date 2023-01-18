@@ -5,14 +5,27 @@ const connect = function() {
     host: '165.227.47.243',
     port: 50541,
   });
+  conn.setEncoding("utf8");
 
   // interpret incoming data as text
-  conn.setEncoding("utf8");
   conn.on('data',(data) => {
     console.log(`Message from server: ${data}`);
   });
-  conn.on('connect',() => {
-    conn.write("Hello from snake client side! ");
+  conn.on('connect',(message) => {
+    conn.write("Name: CHL");
+
+    //setInterval(() => {
+    //  conn.write('Move: up');
+    //}, 50);
+
+
+
+    //conn.write('Move: up');
+
+
+    //conn.write("Successfully connected to game server");
+    //conn.write("Hello from client!");
+    //console.log('Successfully connected to game server');
   });
   return conn;
 };
