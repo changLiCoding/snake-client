@@ -8,23 +8,19 @@ const handleUserInput = function(key) {
   }
   if (key === 'w') {
     //conn.write('');
-    process.stdout.write('Move: up');
     connection.write('Move: up');
   }
   if (key === 's') {
     //conn.write('');
     connection.write('Move: down');
-    process.stdout.write('Move: down');
   }
   if (key === 'a') {
     //conn.write('');
     connection.write('Move: left');
-    process.stdout.write('Move: left');
   }
   if (key === 'd') {
     //conn.write('');
     connection.write('Move: up');
-    process.stdout.write('Move: right');
   }
 };
 

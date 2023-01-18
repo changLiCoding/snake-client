@@ -13,6 +13,7 @@ const connect = function() {
   });
   conn.on('connect',() => {
     conn.write("Name: CHL");
+    conn.write('Say: It Works?');
 
     //setInterval(() => {
     //  conn.write('Move: up');
