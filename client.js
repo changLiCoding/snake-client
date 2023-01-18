@@ -11,7 +11,7 @@ const connect = function() {
   conn.on('data',(data) => {
     console.log(`Message from server: ${data}`);
   });
-  conn.on('connect',(message) => {
+  conn.on('connect',() => {
     conn.write("Name: CHL");
 
     //setInterval(() => {
