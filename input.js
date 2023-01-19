@@ -20,7 +20,10 @@ const handleUserInput = function(key) {
   }
   if (key === 'd') {
     //conn.write('');
-    connection.write('Move: up');
+    connection.write('Move: right'); // Should be "right"
+  }
+  if (key === 'x') {
+    connection.write('Say: It Works?');
   }
 };
 

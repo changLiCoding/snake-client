@@ -14,20 +14,7 @@ const connect = function() {
   });
   conn.on('connect',() => {
     conn.write(`Name: ${NAME}`);
-    conn.write('Say: It Works?');
 
-    //setInterval(() => {
-    //  conn.write('Move: up');
-    //}, 50);
-
-
-
-    //conn.write('Move: up');
-
-
-    //conn.write("Successfully connected to game server");
-    //conn.write("Hello from client!");
-    //console.log('Successfully connected to game server');
   });
   return conn;
 };
